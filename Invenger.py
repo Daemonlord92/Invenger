@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from PIL import Image, ImageTk
+
 import Inventorycounter
 
 class Window(Frame):
@@ -75,13 +75,6 @@ class Window(Frame):
         menu.add_cascade(label="Edit", menu=edit)
    
 
-  #  def showImg(self):
-      #  load= Image.open('warehouse.png')
-      #  render = ImageTk.PhotoImage(load)
-
-      #  img = Label(self, image=render)
-      #  img.image= render
-      #  img.place(x=0, y=200)
 
    # def showTxt(self):
     #    text = Label(self, text='hey clean warehouse')
@@ -94,12 +87,6 @@ class Window(Frame):
         exit()
 
 root = Tk()
-#Work on the resize background image
-#C= Canvas(root, bg="red", height=1024, width=600)
-#filename=PhotoImage(file = "warehouse.png")
-#background_label = Label(root, image=filename)
-#background_label.place(x=0, y=0, relwidth=1, relheight=1)
-#C.pack()
 root.geometry("1024x600")
 app = Window(root)
 

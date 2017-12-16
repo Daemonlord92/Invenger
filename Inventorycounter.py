@@ -1,42 +1,71 @@
-from openpyxl import *
-inv_db =Workbook()
+
+import sqlite3
+from sqlite3 import Error
 
 
+class NewDatabase(object):
+
+    def main():
+        database = "C:\\sqlite\db\inventory.db"
+
+        conn = create_connection(database)
+        with conn:
+            print("1.Add Item to Inventory:")
+
+
+    def create_db(self):
+        try:
+            conn = sqlite3.connect(inventory.db)
+            return conn
+        except Error as e:
+            print(e)
+
+        return None
 
 #User inputs Item Information in the Database
-class inv_item(object):
+
+
+class InvItem(object):
    def item_name(self):
-       
        pass
+
    def item_num(self):
        pass
-   def itemdescrip(self):
+
+   def item_descrip(self):
        pass
-   def itemweight(self):
+
+   def item_weight(self):
        pass
+
    def item_amount(self):
        pass
+
    def item_cost(self):
        pass
 
 
 
 #Sorts through the items in the Database and put the Aphlabetlcally
-class sort_inv_items(object):
-    pass
-#Item Database
-class inv_db(object):
-    ws = inv_db.active
-    wb2= load_workbook('Inventory.xlsx')
-    
-    
 
+class SortInvItems(object):
     pass
-#Creates a backuplist on a website
-class backup_list(object):
+
+
+#Item Database
+
+class InvDb(object):
     pass
+
+#Creates a back-up list on a website
+
+class BackupList(object):
+    pass
+
 #Saves the Database
-class Save_db(inv_db):
+
+
+class SaveDb(InvDb):
 
     def __init__(self):
-        inv_db.save("Inventory.xlsx")
+        pass
